@@ -850,7 +850,7 @@
   #endif //ULTRA_LCD
 
 #else // RAMPS_V_1_1 or RAMPS_V_1_2 as default (BOARD_RAMPS_OLD)
-
+//DWI
 #define X_STEP_PIN         26
 #define X_DIR_PIN          28
 #define X_ENABLE_PIN       24
@@ -860,14 +860,14 @@
 #define Y_STEP_PIN         38
 #define Y_DIR_PIN          40
 #define Y_ENABLE_PIN       36
-#define Y_MIN_PIN          16
-#define Y_MAX_PIN          -1    //17
+#define Y_MIN_PIN          16  //Dwi 16 is ori
+#define Y_MAX_PIN          -1  //Dwi -1 is ori //17
 
 #define Z_STEP_PIN         44
 #define Z_DIR_PIN          46
 #define Z_ENABLE_PIN       42
-#define Z_MIN_PIN          18
-#define Z_MAX_PIN          -1    //19
+#define Z_MIN_PIN          -1 //18 Dwi
+#define Z_MAX_PIN          18 //-1 Dwi   //19
 
 #define E0_STEP_PIN         32
 #define E0_DIR_PIN          34
@@ -888,6 +888,8 @@
   #define HEATER_BED_PIN    8    // RAMPS 1.1
   #define FAN_PIN           9    // RAMPS 1.1
 #endif
+//Dwi
+#define HEATER_BED_PIN      8    // RAMPS 1.1
 #define HEATER_1_PIN        -1
 #define HEATER_2_PIN        -1
 #define TEMP_0_PIN          2    // MUST USE ANALOG INPUT NUMBERING NOT DIGITAL OUTPUT NUMBERING!!!!!!!!!
